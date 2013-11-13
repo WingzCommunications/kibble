@@ -1,0 +1,327 @@
+/*
+Theme Name: Kibble
+Theme URI: http://github.com/chrismccoy/kibble
+Author: Chris McCoy
+Author URI: http://github.com/chrismccoy/kibble
+Description: Kibble is a basic theme for images and image galleries
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kibble
+*/
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+body { 
+	background: #2b2b2b; 
+	font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	color: #f7debb; 
+}
+
+.video {
+	width:520px;
+	margin: 0 auto;
+}
+
+a { 
+	color: #e5a53d; 
+	text-decoration: none; 
+}
+
+a:hover { 
+	text-decoration: none; 
+	color: #fff;
+}
+
+a img { 
+	border: none; 
+}
+
+.clear { 
+	clear: both; 
+	height: 25px; 
+}
+
+p { 
+	text-align: justify; 
+}
+
+#wrapper { 
+	width: 1250px; 
+	margin: 0 auto; 
+	position: relative; 
+}
+
+#header { 
+	overflow: hidden; 
+	height: 94px; 
+	padding-top: 5px;
+}
+
+#header h1 { 
+	position: absolute; 
+	top: 25px; 
+	left: 0px; 
+}
+
+#header p { 
+	color: #f7debb; 
+	font-size: 11px; 
+	width: 600px; 
+	float: right; 
+	text-align: right; 
+	top: 25px;
+}
+
+.pad { 
+	color: #f7debb; 
+	padding-left: 9px;
+}
+
+.header {
+	width: 750px !important; 
+	padding-top: 25px;	
+}
+
+.thumbs { 
+	float:left; 
+	width: 1250px;
+	margin: 0 auto;  
+}
+
+.thumbs .title, .content .title { 
+	margin-bottom: 25px; 
+	overflow: hidden; 
+	*zoom: 1; 
+}
+
+.thumbs .title h2, .content .title h2 {
+	text-transform:capitalize;
+	font-size: 21px; 
+	padding: 2px 0 0 8px; 
+	float:left; 
+	color: #f7debb; 
+	font-weight: normal; 
+}
+
+.thumbs { 
+	margin-bottom: 10px; 
+}
+
+.thumbs .posts { 
+	clear: both; 
+}
+
+.thumbs li { 
+	float:left; 
+	text-align: center; 
+}
+
+.thumbs li a img { 
+	display:block; 
+	border-color: #535353; 
+	border-style: solid; 
+}
+
+.thumbs .other li { 
+	padding: 0 22px; 
+}
+
+.thumbs li { 
+	padding: 0 5px; 
+}
+
+.thumbs li img { 
+	border-width: 2px; 
+	width:164px;
+	height:204px;
+	text-align:center;
+}
+
+.posts li, .posts2 li, .posts3 li { 
+	margin-bottom: 10px; 
+}
+
+.posts li img, .posts2 li img, .posts3 li img { 
+	margin-bottom:2px; 
+}
+
+.content .title ul {
+	float: right;
+	padding-top: 12px;
+}
+
+.content .title ul li {
+	display: inline;
+	padding: 0 8px;
+	border-right: 1px solid #ccc;
+	font-size: 11px;
+	margin: 0;
+	background: none !important;
+}
+
+.content .title ul li.end {
+	border: none;
+}
+
+.left-column, .right-column { 
+	width: 16.666%; 
+}
+
+.right-column { 
+	float: right; 
+}
+
+.left-column { 
+	float: left; 
+}
+
+.left-column .img, .right-column .img  {
+	width:164px;
+	height:204px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-left: auto;
+	border: 2px solid #535353;
+}
+
+.bottom_row {
+	width:1050px;
+}
+
+.bottom-row .img  {
+	width:164px;
+	height:204px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	border: 2px solid #535353;
+}
+
+.bottom-row li  {
+	width:16.6666%;
+	float:left;
+	text-align:center;
+}
+
+.posts {
+	margin: auto;
+	width:1250px;
+	text-align:center;
+}
+
+.posts3 {
+	margin:0 auto;
+	width: 720px;
+	text-align:center;
+}
+
+.posts2 {
+	margin: 0 auto;
+	width:850px;
+	text-align:center;
+}
+
+.pagination {
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+}
+
+.pagination a, .pagination span {
+	float: left;
+	color: #CCC;
+	font-size:14px;
+	line-height:24px;
+	font-weight: normal;
+	text-align: center;
+	border: 1px solid #222;
+	min-width: 14px;
+	padding: 0 7px;
+	margin: 0 5px 0 0;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	background: #555; /* Old browsers */
+	background: -moz-linear-gradient(top, #555 0%, #333 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555), color-stop(100%,#333)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #555 0%,#333 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #555 0%,#333 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #555 0%,#333 100%); /* IE10+ */
+	background: linear-gradient(top, #555 0%,#333 100%); /* W3C */
+}
+
+.pagination a:hover {
+	text-decoration: none;
+	background: #444;
+}
+
+.pagination .current {
+	background: #222;
+	color: #FFF;
+	border-color: #000;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.2), 0 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+	cursor: default;
+}
+
+.pagination .ellipse {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+#channel_container {
+	width: 100%;
+	margin: 20px;
+}
+
+.spot { 
+	float:left; 
+	margin:0 10px 10px 0; 
+	background:#000; 
+	text-decoration:none; 
+}
+
+.spot p { margin:0; }
+	
+.spot img { 
+	display:block; 
+	border: 2px solid #535353;
+
+}
+
+.caption { 
+	padding:20px; 
+	background:#000; 
+	color:#ccc; 
+}
+
+.caption.copyright { 
+	padding:5px 10px; 
+	background:transparent; 
+	text-align:right; 
+	color:#fff; 
+	text-shadow:0 1px 0 rgba(0,0,0,0.5); 
+}
+
+.caption.copyright span { 
+	padding:2px 8px 4px; 
+	background:rgba(0,0,0,0.3); 
+	border-radius:4px; 
+	-moz-border-radius:4px; 
+	-webkit-border-radius:4px; 
+}
+
+.imagenav {
+	width:600px;
+	margin: 0 auto;
+}
+
