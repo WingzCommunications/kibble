@@ -4,12 +4,12 @@ if( !class_exists('WPUpdatesThemeUpdater') ) {
     class WPUpdatesThemeUpdater {
     
         var $api_url;
-    	var $theme_id;
+    	var $theme_id = 378;
     	var $theme_slug;
+    	var $license_key;
     
-        function __construct( $api_url, $theme_id, $theme_slug ) {
+        function __construct( $api_url, $theme_slug, $license_key = null ) {
     		$this->api_url = $api_url;
-    		$this->theme_id = $theme_id;
     		$this->theme_slug = $theme_slug;
     
     		add_filter( 'pre_set_site_transient_update_themes', array(&$this, 'check_for_update') );
@@ -26,6 +26,8 @@ if( !class_exists('WPUpdatesThemeUpdater') ) {
     		    'slug' => $this->theme_slug,
     			'version' => $transient->checked[$this->theme_slug]
     		);
+    		if ($this->license_key) $request_args['license'] = $this->license_key;
+    		
     		$request_string = $this->prepare_request( 'theme_update', $request_args );
     		$raw_response = wp_remote_post( $this->api_url, $request_string );
         	
@@ -54,3 +56,5 @@ if( !class_exists('WPUpdatesThemeUpdater') ) {
 
     }
 }
+
+?>

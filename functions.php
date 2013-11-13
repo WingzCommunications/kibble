@@ -18,7 +18,7 @@ require( get_template_directory() . '/lib/wp-updates-theme.php' );
  *
 */
 
-new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 378, basename(get_template_directory()) );
+new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/2/theme', basename(get_template_directory()));
 
 /**
  * define our video width and height from theme options panel
